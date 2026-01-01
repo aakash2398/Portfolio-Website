@@ -94,7 +94,7 @@ export function ContactSection() {
               technical consultation, I'm here to help bring your vision to
               life.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex gap-3">
               <div className="w-40 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                 Freelance
               </div>
