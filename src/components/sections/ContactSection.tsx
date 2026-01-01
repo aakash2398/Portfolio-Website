@@ -78,7 +78,7 @@ export function ContactSection() {
           </div>
 
           {/* Availability Notice */}
-          <div className="p-6 rounded-2xl glass-card text-start">
+          <div className="p-6 rounded-2xl glass-card text-start hover:border-primary/50 transition-all duration-300">
             <div className="flex items-center justify-start gap-3 mb-4">
               <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
               <span className="text-foreground font-medium">

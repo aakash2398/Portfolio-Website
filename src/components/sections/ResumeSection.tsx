@@ -50,16 +50,16 @@ export function ResumeSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column - CTA & Highlights */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {/* Download Card */}
-            <div className="p-8 rounded-2xl glass-card text-center">
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+            <div className="p-6 rounded-2xl glass-card text-center hover:border-primary/50 transition-all duration-300">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <Briefcase className="w-10 h-10 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-2xl font-bold text-foreground mb-3">
                 Get My Full Resume
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-4">
                 Download my complete resume with detailed work history, education, and certifications.
               </p>
               <Button variant="hero" size="lg" asChild>
@@ -71,7 +71,7 @@ export function ResumeSection() {
             </div>
 
             {/* Highlights */}
-            <div className="p-6 rounded-2xl glass-card">
+            <div className="p-6 rounded-2xl glass-card hover:border-primary/50 transition-all duration-300 text-center">
               <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
                 <Award className="w-5 h-5 text-primary" />
                 Key Highlights
@@ -96,14 +96,14 @@ export function ResumeSection() {
 
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-[7px] top-3 bottom-3 w-0.5 bg-border" />
+              <div className="absolute left-[7px] top-0 bottom-0 w-0.5 bg-border" />
 
               {/* Timeline Items */}
               <div className="space-y-6">
                 {experience.map((item, index) => (
                   <div key={item.title} className="relative pl-8">
                     {/* Timeline Dot */}
-                    <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                    <div className="absolute left-0 top-0 w-4 h-4 rounded-full bg-primary border-4 border-background" />
 
                     <div className="p-5 rounded-xl glass-card hover:border-primary/50 transition-all duration-300">
                       <div className="flex flex-wrap items-center gap-2 mb-2">
