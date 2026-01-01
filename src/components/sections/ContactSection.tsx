@@ -67,7 +67,10 @@ export function ContactSection() {
           <div className="p-6 rounded-2xl glass-card text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-foreground font-medium">Available for new projects</span>
+              <span className="text-foreground font-medium">Currently Available</span>
+            </div>
+            <div>
+              Let's Build Something Great Together!
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground text-sm">
               <div className="flex items-center gap-2">
