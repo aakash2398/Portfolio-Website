@@ -1,4 +1,11 @@
-import { Mail, Linkedin, Github, MapPin, Clock, ArrowUpRight } from "lucide-react";
+import {
+  Mail,
+  Linkedin,
+  Github,
+  MapPin,
+  Clock,
+  ArrowUpRight,
+} from "lucide-react";
 
 const contactInfo = [
   {
@@ -34,7 +41,8 @@ export function ContactSection() {
           <p className="text-primary font-mono text-sm mb-2">Let's connect</p>
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle mx-auto mt-4">
-            Have a project in mind or want to discuss opportunities? Feel free to reach out!
+            Have a project in mind or want to discuss opportunities? Feel free
+            to reach out!
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
@@ -47,14 +55,20 @@ export function ContactSection() {
                 key={item.label}
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  item.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="group p-6 rounded-2xl glass-card hover:border-primary/50 transition-all duration-300 text-center"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">{item.label}</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  {item.label}
+                </h3>
                 <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors flex items-center justify-center gap-1">
                   {item.value}
                   <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -64,22 +78,28 @@ export function ContactSection() {
           </div>
 
           {/* Availability Notice */}
-          <div className="p-6 rounded-2xl glass-card text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="p-6 rounded-2xl glass-card text-start">
+            <div className="flex items-center justify-start gap-3 mb-4">
               <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-foreground font-medium">Currently Available</span>
+              <span className="text-foreground font-medium">
+                Currently Available
+              </span>
             </div>
-            <div>
+            <h4 className="text-2xl mb-3">
               Let's Build Something Great Together!
-            </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground text-sm">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span>India (Remote Friendly)</span>
+            </h4>
+            <p className="text-blue-50 mb-4">
+              I'm currently available for freelance projects and full-time
+              opportunities. Whether you need a web application, mobile app, or
+              technical consultation, I'm here to help bring your vision to
+              life.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <div className="w-40 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                Freelance
               </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>IST (UTC+5:30)</span>
+              <div className="w-40 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                Full-time
               </div>
             </div>
           </div>
